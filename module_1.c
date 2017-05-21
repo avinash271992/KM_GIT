@@ -1,13 +1,13 @@
 #include<linux/fs.h>
 #include<linux/kernel.h>
 #include<linux/module.h>
-#include<linux.init.h>
-static int first_program()
+#include<linux/init.h>
+static int first_program(void)
 {
 printk("Inside your first module\n");
 return 0;
 }
-static void first_program_exit()
+static void first_program_exit(void)
 {
 printk("exiting from your first module\n");
 }
